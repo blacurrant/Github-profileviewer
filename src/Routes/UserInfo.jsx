@@ -92,7 +92,7 @@ const UserInfo = () => {
         ))}
       <h1 className="text-black/50 font-semibold my-5">Public Repositories:</h1>
       {/* {loading && <Loading />} */}
-      <Suspense fallback={loading && <Loading />} >
+      <Suspense fallback={<Loading />} >
         <div className="grid md:grid-cols-2 grid-cols-1 gap-7">
           {users && <Repo users={users} />}
         </div>
